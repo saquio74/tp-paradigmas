@@ -1,12 +1,17 @@
+import { acumular } from './ejercicios/puntoDoce.js'
 import { aplicar } from './ejercicios/puntoCinco.js'
 import { generarMensaje, saludar } from './ejercicios/puntoCuatro.js'
+import { por2, por5 } from './ejercicios/puntoDiez.js'
 import { calcularIva } from './ejercicios/puntoDos.js'
 import { revisar } from './ejercicios/puntoNueve.js'
 import { gritar } from './ejercicios/puntoOcho.js'
+import { saludoFormal, saludoInformal } from './ejercicios/puntoOnce.js'
 import { aplicarDosVeces } from './ejercicios/puntoSeis.js'
 import { compuesto } from './ejercicios/puntoSiete.js'
 import { normalizarTexto } from './ejercicios/puntoTres.js'
 import { esPar, sumarDos, triplicar } from './ejercicios/puntoUno.js'
+import { sumarHasta } from './ejercicios/puntoTrece.js'
+import { factorial } from './ejercicios/puntoCatorce.js'
 
 console.log(
     'Punto uno:\n',
@@ -63,5 +68,32 @@ console.log(
     'Punto 9:\n',
     `- revisar(4): ${revisar(4)}\n`,
     `- revisar(6): ${revisar(6)}\n`,
-    `- revisar(11): ${revisar(11)}\n`
+    `- revisar(11): ${revisar(11)}\n`,
+)
+
+console.log('Punto 10:\n', `- por2(7): ${por2(7)}\n`, `- por5(4): ${por5(4)}`)
+
+console.log(
+    'Punto 11:\n',
+    `- saludoInformal("Carla"): ${saludoInformal('Carla')}\n`,
+    `- saludoFormal("Pedro"): ${saludoFormal('Pedro')}`,
+)
+
+console.log(
+    'Punto 12:\n',
+    `- acumular(5): ${acumular(5)}\n`,
+    `- acumular(3): ${acumular(3)}\n`,
+    `- acumular(10): ${acumular(10)}`,
+)
+
+console.log(
+    'Punto 13:\n',
+    `- sumarHasta(5): ${sumarHasta(5)}\n`,
+    `- sumarHasta(8): ${sumarHasta(8)}`
+)
+
+console.log(
+    'Punto 14:\n',
+    `- sumarHasta(5): ${factorial(5)}\n`,
+    `- sumarHasta(1): ${factorial(1)}`
 )
