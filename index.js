@@ -10,8 +10,10 @@ import { aplicarDosVeces } from './ejercicios/puntoSeis.js'
 import { compuesto } from './ejercicios/puntoSiete.js'
 import { normalizarTexto } from './ejercicios/puntoTres.js'
 import { esPar, sumarDos, triplicar } from './ejercicios/puntoUno.js'
-import { sumarHasta } from './ejercicios/puntoTrece.js'
-import { factorial } from './ejercicios/puntoCatorce.js'
+import { sumarFactorialSingle, sumarHasta } from './ejercicios/puntoTrece.js'
+import { factorial, factorialSingle } from './ejercicios/puntoCatorce.js'
+import { potencia } from './ejercicios/EjercicioQuince.js'
+import { revisarIntegrador } from './ejercicios/EjercicioDiesiseis.js'
 
 console.log(
     'Punto uno:\n',
@@ -89,11 +91,30 @@ console.log(
 console.log(
     'Punto 13:\n',
     `- sumarHasta(5): ${sumarHasta(5)}\n`,
-    `- sumarHasta(8): ${sumarHasta(8)}`
+    `- sumarHasta(8): ${sumarHasta(8)}\n`,
+    `- sumarFactorialSingle(5): ${sumarFactorialSingle(5)}\n`,
+    `- sumarFactorialSingle(8): ${sumarFactorialSingle(8)}`,
 )
 
 console.log(
     'Punto 14:\n',
-    `- sumarHasta(5): ${factorial(5)}\n`,
-    `- sumarHasta(1): ${factorial(1)}`
+    `- factorial(5): ${factorial(5)}\n`,
+    `- factorial(1): ${factorial(1)}\n`,
+    `- factorialSingle(5): ${factorialSingle(5)}\n`,
+    `- factorialSingle(1): ${factorialSingle(1)}`,
+)
+
+console.log(
+    'Punto 15:\n',
+    `- potencia(2,4): ${potencia(2, 4)}\n`,
+    `- potencia(3,3): ${potencia(3, 3)}\n`,
+    `- potencia(3,-3): ${potencia(3, -3)}\n`,
+    `- potencia(3,0): ${potencia(3, 0)}\n`,
+)
+
+console.log(
+    'Punto 16:\n',
+    `- revisar(5): ${revisarIntegrador(5)}\n`,
+    `- revisar(10): ${revisarIntegrador(10)}\n`,
+    `- revisar(20): ${revisarIntegrador(20)}\n`
 )

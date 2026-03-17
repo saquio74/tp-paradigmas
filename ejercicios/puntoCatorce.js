@@ -1,5 +1,17 @@
+let acc = 1
+export const factorialSingle = (n) => {
+    if (n < 1) return n
+    if (n === 1) {
+        let resp = acc
+        acc = 1
+        return resp
+    }
+    acc = acc * n
+    return factorialSingle(n - 1, acc)
+}
+
 export const factorial = (n) => {
-    let acc = 1
+    if (n <= 1) return n
     return factorialHelper(n, acc)
 }
 
